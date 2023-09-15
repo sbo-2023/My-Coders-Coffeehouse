@@ -6,40 +6,51 @@
     <title>Coders Coffeehouse</title>
   </head>
   <body>
-    <h1>Welcome to Coders Coffeehouse</h1>
-    <p>Turning cafeine into code since 1999.</p>
-    <hr />
-    <!--navigation bar-->
-    <a href="#">Home</a>
-    <a href="#">Drinks menu</a>
-    <a href="#">Contact</a>
-    <a href="#">WIN Free coffee</a>
-    <!--end of navigation bar-->
+    <header>
+      <div id="home">
+        <h1>Welcome to Coders Coffeehouse</h1>
+        <p>Turning cafeine into code since 1999.</p>
+      </div>
+      <hr />
+      <div>
+        <!--navigation bar-->
+        <a href="#home">Home</a>
+        <a href="#drinks">Drinks menu</a>
+        <a href="#contact">Contact</a>
+        <a href="#">WIN Free coffee</a>
+        <!--end of navigation bar-->
+      </div>
+    </header>
+
     <main>
       <section>
-        <h2>Reasons to love us</h2>
-        <ol>
-          <li>Free unlimited wifi</li>
-          <li>Charging outlets with every table</li>
-          <li>High quality coffee to fuel your code</li>
-        </ol>
+        <div>
+          <h2>Reasons to love us</h2>
+          <ol>
+            <li>Free unlimited wifi</li>
+            <li>Charging outlets with every table</li>
+            <li>High quality coffee to fuel your code</li>
+          </ol>
+        </div>
         <div>
           <span>
             <img
               src="/assets/images/image-from-rawpixel-id-6111486-j.webp"
               alt="people in a coffeeshop"
+              width="400"
             />
           </span>
           <span>
             <img
               src="/assets/images/image-from-rawpixel-id-435181-jp.webp"
               alt="person working on PC on a coffeeshop"
+              width="400"
             />
           </span>
         </div>
       </section>
       <section>
-        <h2>Drinks menu</h2>
+        <h2 id="drinks">Drinks menu</h2>
         <h3>Coffee</h3>
         <ul>
           <li>Latte</li>
@@ -50,6 +61,7 @@
           <li>Macchiato</li>
           <li>Flat white</li>
         </ul>
+        <a href="#home" aria-label="Goes to the top of this website">Back to top</a>
         <h3>Tea</h3>
         <ul>
           <li>Earl Grey</li>
@@ -60,6 +72,7 @@
           <li>Mint tea</li>
           <li>Chai latte</li>
         </ul>
+        <a href="#home" aria-label="Goes to the top of this website">Back to top</a>
         <h3>Cold drinks</h3>
         <ul>
           <li>Iced tea</li>
@@ -73,9 +86,10 @@
           </ul>
           <li>Fruit juices</li>
         </ul>
+        <a href="#home" aria-label="Goes to the top of this website">Back to top</a>
       </section>
       <section>
-        <h2>Contact</h2>
+        <h2 id="contact">Contact</h2>
         <h3>Open times</h3>
         <table aria-label="Opening hours of Coders Coffeehouse">
           <tbody>
@@ -112,11 +126,15 @@
           Dublin
         </p>
       </section>
+      <div>
+        <iframe src="https://bit.ly/2QVfkiy" title="Coders coffeehouse location using Google maps" height="300" width="100%"></iframe>
+      </div>
+      <a href="#home" aria-label="Goes to the top of this website">Back to top</a>
     </main>
     <footer>
-        <a href="#">Find us on Facebook</a>
-        <a href="#">Find us on Instagram</a>
-        <a href="#">Find us on Twitter</a>
+      <a href="https://www.facebook.com/" aria-label="Goes to Facebook website (opens in a new tab)" rel="noopener" target="_blank">Find us on Facebook</a>
+      <a href="https://www.instagram.com/" aria-label="Goes to Instagram website (opens in a new tab)" rel="noopener" target="_blank">Find us on Instagram</a>
+      <a href="https://www.twitter.com/" aria-label="Goes to Twitter website (opens in a new tab)" rel="noopener" target="_blank">Find us on Twitter</a>
     </footer>
   </body>
 </html>
